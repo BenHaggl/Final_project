@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(convolve LANGUAGES CXX)
+find_package(OpenMP REQUIRED)
+include_directories(include)
+add_executable(convolve main.cpp src/convolution.cpp)
+target_link_libraries(convolve OpenMP::OpenMP_CXX)
+set(CMAKE_CXX_STANDARD 11)

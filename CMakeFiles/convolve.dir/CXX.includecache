@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/Final_project/main.cpp
+iostream
+-
+omp.h
+-
+convolution.hpp
+/workspaces/Final_project/convolution.hpp
+
+/workspaces/Final_project/src/convolution.cpp
+convolution.hpp
+/workspaces/Final_project/src/convolution.hpp
+fstream
+-
+iostream
+-
+sstream
+-
+algorithm
+-
+omp.h
+-
+limits
+-
+
+include/convolution.hpp
+vector
+-
+string
+-
+
